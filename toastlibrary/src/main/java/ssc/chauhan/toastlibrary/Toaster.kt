@@ -29,8 +29,9 @@ object Toaster {
                 it.setGravity(Gravity.TOP, 0, 0)
                 it.setText("$msg")
                 it.duration = Toast.LENGTH_SHORT
-                it.show()
+
             }
+            toast.show()
         }
     }
 
