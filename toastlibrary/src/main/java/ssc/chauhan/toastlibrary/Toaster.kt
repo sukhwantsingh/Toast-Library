@@ -12,12 +12,8 @@ object Toaster {
 
     fun <T> showOnCenter(message: T?) {
         message?.let { msg ->
-            val toast = Toast(ToastInject.appContext).also {
-                it.setGravity(Gravity.CENTER, 0, 0)
-                it.setText("$msg")
-                it.duration = Toast.LENGTH_SHORT
-
-            }
+            val toast = Toast.makeText(ToastInject.appContext, "$msg", Toast.LENGTH_SHORT)
+            toast.setGravity(Gravity.CENTER, 0, 0)
             toast.show()
 
         }
@@ -25,23 +21,16 @@ object Toaster {
 
     fun <T> showOnTop(message: T?) {
         message?.let { msg ->
-            val toast = Toast(ToastInject.appContext).also {
-                it.setGravity(Gravity.TOP, 0, 0)
-                it.setText("$msg")
-                it.duration = Toast.LENGTH_SHORT
-
-            }
+            val toast = Toast.makeText(ToastInject.appContext, "$msg", Toast.LENGTH_SHORT)
+            toast.setGravity(Gravity.TOP, 0, 0)
             toast.show()
         }
     }
 
     fun <T> showWithGravity(message: T?, gravity: Int = Gravity.BOTTOM) {
         message?.let { msg ->
-            val toast = Toast(ToastInject.appContext).also {
-                it.setGravity(gravity, 0, 0)
-                it.setText("$msg")
-                it.duration = Toast.LENGTH_SHORT
-            }
+            val toast = Toast.makeText(ToastInject.appContext, "$msg", Toast.LENGTH_SHORT)
+            toast.setGravity(gravity, 0, 0)
             toast.show()
         }
     }
