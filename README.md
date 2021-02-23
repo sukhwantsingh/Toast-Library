@@ -15,12 +15,13 @@ allprojects {
      maven {
              url 'https://jitpack.io' 
            }
-}
+    } 
 }
   
 Step 2. Add the dependency  
+
 dependencies {
-      implementation 'com.github.sukhwantsingh:Toast-Library:Tag'
-}
+               implementation 'com.github.sukhwantsingh:Toast-Library:Tag'
+             }
   
 That's it! Happy Coding!
