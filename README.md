@@ -2,6 +2,7 @@
 [![](https://jitpack.io/v/sukhwantsingh/Toast-Library.svg)](https://jitpack.io/#sukhwantsingh/Toast-Library)
 
 
+
 To get a Git project into your build:
 
 Step 1. Add the JitPack repository to your build file
